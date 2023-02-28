@@ -67,7 +67,9 @@ async function startApp() {
 
     client.sendTextMessage(tom_room_id, message);
 
-    setTimeout(messageTom, Math.ceil(Math.random() * 16) * 60 * 60 * 1000);
+    const hoursLater = Math.ceil(Math.random() * 16);
+    setTimeout(messageTom, hoursLater * 60 * 60 * 1000);
+    console.log(hoursLater);
   };
 
   client.once("sync", async () => {
