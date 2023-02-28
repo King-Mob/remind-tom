@@ -71,7 +71,7 @@ async function startApp() {
   };
 
   client.once("sync", async () => {
-    setTimeout(messageTom, Math.ceil(Math.random() * 16) * 60 * 60 * 1000);
+    messageTom();
   });
 }
 
