@@ -69,7 +69,7 @@ async function startApp() {
 
     const hoursLater = Math.ceil(Math.random() * 16);
     setTimeout(messageTom, hoursLater * 60 * 60 * 1000);
-    console.log(hoursLater);
+    console.log(hoursLater, "hours later");
   };
 
   client.once("sync", async () => {
